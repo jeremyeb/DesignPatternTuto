@@ -1,0 +1,2 @@
+About creating classes or objects
+Singleton, Prototype, Factory, Abstract Factory, Editor

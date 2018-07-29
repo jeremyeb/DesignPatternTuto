@@ -1,0 +1,3 @@
+Concern the interactions between classes and the assignment of responsibilities
+Responsibility Center, Command, Interpreter, Iterator, Mediator, MEmento,
+Observer, State, Strategy, Patron of Method, Visitor

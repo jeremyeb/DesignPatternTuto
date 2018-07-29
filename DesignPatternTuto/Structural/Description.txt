@@ -1,0 +1,3 @@
+Are interested in the composition of objects or classes to realize new
+functionalities
+Bridge, Facade, Adapter, Composite Object, Proxy, Eat On, Decorator
