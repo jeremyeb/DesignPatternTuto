@@ -1,6 +1,6 @@
 ﻿namespace DesignPatternTuto.Behavioral.Strategy
 {
-    class MotorV8 : IMotor
+    public class MotorV8 : IMotor
     {
         public void Start()
         {

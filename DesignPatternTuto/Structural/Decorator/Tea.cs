@@ -2,6 +2,6 @@
 {
     public abstract class Tea : IDrink
     {
-        public abstract float Price { get }
+        public abstract float Price { get; }
     }
 }
