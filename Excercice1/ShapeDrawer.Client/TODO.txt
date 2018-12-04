@@ -1,0 +1,7 @@
+﻿Using MVC patterns
+1 - Use Singleton, Observer, Strategy patterns
+2 - When recieving the message from the server
+2a - Draw the forms on the correct UI (Console, Form)
+2b - Only one connection to the server should be open
+3 - Create a logger that can be use inside the all application
+3a - Keep it base with 2 type of method (Info and Error)
