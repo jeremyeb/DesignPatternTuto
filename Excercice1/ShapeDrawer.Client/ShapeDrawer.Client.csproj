@@ -53,8 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="Controller\ShapeDrawerConsoleController.cs" />
-    <Compile Include="Controller\ShapeDrawerFormController.cs" />
+    <Compile Include="Controller\ShapeDrawerController.cs" />
     <Compile Include="Controller\ShapeEventArgs.cs" />
     <Compile Include="Forms\ShapeDrawer.cs">
       <SubType>Form</SubType>

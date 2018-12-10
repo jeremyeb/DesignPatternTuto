@@ -12,12 +12,11 @@ namespace ShapeDrawer.Client
         [STAThread]
         static void Main()
         {
-            var consoleController = new ShapeDrawerConsoleController();
-            var formController = new ShapeDrawerFormController();
+            var controller = new ShapeDrawerController();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.ShapeDrawer(formController));
+            Application.Run(new Forms.ShapeDrawer(controller));
         }
     }
 }

@@ -7,9 +7,9 @@ namespace ShapeDrawer.Client.Forms
 {
     public partial class ShapeDrawer : Form
     {
-        private readonly ShapeDrawerFormController controller;
+        private readonly ShapeDrawerController controller;
 
-        public ShapeDrawer(ShapeDrawerFormController controller)
+        public ShapeDrawer(ShapeDrawerController controller)
         {
             this.controller = controller ?? throw new ArgumentNullException(nameof(controller));
 
