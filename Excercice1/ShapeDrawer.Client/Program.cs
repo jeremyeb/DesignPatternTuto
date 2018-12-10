@@ -6,6 +6,7 @@ namespace ShapeDrawer.Client
 {
     static class Program
     {
+         
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -13,6 +14,9 @@ namespace ShapeDrawer.Client
         static void Main()
         {
             var controller = new ShapeDrawerController();
+            var app = new App(controller);
+
+            ShapeReciever.Instance.Start("127.0.0.1", 1111);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
