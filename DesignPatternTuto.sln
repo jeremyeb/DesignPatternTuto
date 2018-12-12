@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternTuto", "DesignPatternTuto\DesignPatternTuto.csproj", "{D569A59E-A411-4542-9992-7FE63E8E56E2}"
 EndProject
@@ -9,9 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercice1", "Exercice1", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeDrawer.Client", "Excercice1\ShapeDrawer.Client\ShapeDrawer.Client.csproj", "{4A412D11-0013-446F-928C-4496DB5B6B86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeDrawer.Common", "Excercice1\ShapeDrawer.Common\ShapeDrawer.Common.csproj", "{89D3CD79-B19E-4FDE-B817-EC94128A3F76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeDrawer.Common", "Excercice1\ShapeDrawer.Common\ShapeDrawer.Common.csproj", "{89D3CD79-B19E-4FDE-B817-EC94128A3F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeDrawer.Server", "Excercice1\ShapeDrawer.Server\ShapeDrawer.Server.csproj", "{DD766AE0-EA8E-4202-827C-6430E7E299A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeDrawer.Server", "Excercice1\ShapeDrawer.Server\ShapeDrawer.Server.csproj", "{DD766AE0-EA8E-4202-827C-6430E7E299A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{DE9079C5-FDCC-426D-A03D-408757CDD494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Tests", "DependencyInjection.Tests\DependencyInjection.Tests.csproj", "{6B251BAC-26E8-4AF0-B44B-F61BA98C7B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{DD766AE0-EA8E-4202-827C-6430E7E299A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD766AE0-EA8E-4202-827C-6430E7E299A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD766AE0-EA8E-4202-827C-6430E7E299A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9079C5-FDCC-426D-A03D-408757CDD494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9079C5-FDCC-426D-A03D-408757CDD494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9079C5-FDCC-426D-A03D-408757CDD494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9079C5-FDCC-426D-A03D-408757CDD494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B251BAC-26E8-4AF0-B44B-F61BA98C7B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B251BAC-26E8-4AF0-B44B-F61BA98C7B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B251BAC-26E8-4AF0-B44B-F61BA98C7B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B251BAC-26E8-4AF0-B44B-F61BA98C7B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
