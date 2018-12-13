@@ -4,9 +4,9 @@ using System;
 
 namespace ShapeDrawer.Client.Strategy
 {
-    public class FormDrawer : IDrawer
+    public class FormDrawer : IFormDrawer
     {
-        private ShapeDrawerController controller;
+        private readonly ShapeDrawerController controller;
 
         public FormDrawer(ShapeDrawerController controller)
         {

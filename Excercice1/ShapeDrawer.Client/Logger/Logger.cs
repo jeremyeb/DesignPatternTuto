@@ -2,19 +2,8 @@
 
 namespace ShapeDrawer.Client.Logger
 {
-    public class Logger
+    public class Logger : ILogger
     {
-        private static Logger instance;
-
-        private Logger()
-        {
-        }
-
-        public static Logger Instance
-        {
-            get { return instance ?? (instance = new Logger()); }
-        }
-
         public void Debug(string message)
         {
             WriteLine("Debug", message);

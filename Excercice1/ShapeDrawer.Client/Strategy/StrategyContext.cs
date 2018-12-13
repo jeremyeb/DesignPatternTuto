@@ -1,4 +1,5 @@
 ﻿using System;
+using ShapeDrawer.Client.Logger;
 using ShapeDrawer.Common.Shape;
 
 namespace ShapeDrawer.Client.Strategy
@@ -6,27 +7,33 @@ namespace ShapeDrawer.Client.Strategy
 
     public class StrategyContext
     {
+        private readonly ILogger logger;
         private IDrawer drawer;
 
-        internal void SetDrawer(IDrawer drawer)
+        public StrategyContext(ILogger logger)
+        {
+            this.logger = logger ?? throw new ArgumentNullException();
+        }
+
+        public void SetDrawer(IDrawer drawer)
         {
             this.drawer = drawer;
         }
 
-        internal void Draw(IShape shape)
+        public void Draw(IShape shape)
         {
             if (shape == null)
             {
-                Logger.Logger.Instance.Error("Cannot Draw a null Shape");
+                logger.Error("Cannot Draw a null Shape");
             }
 
             if(drawer == null)
             {
-                Logger.Logger.Instance.Error("Cannot Draw since the drawer is null");
+                logger.Error("Cannot Draw since the drawer is null");
             }
             else
             {
-                Logger.Logger.Instance.Info($"Drawing {shape.GetType()} with Drawer {drawer.GetType()}");
+                logger.Info($"Drawing {shape.GetType()} with Drawer {drawer.GetType()}");
                 drawer.Draw(shape);
             }
         }

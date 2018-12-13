@@ -4,7 +4,7 @@ using System;
 
 namespace ShapeDrawer.Client.Strategy
 {
-    public class ConsoleDrawer : IDrawer
+    public class ConsoleDrawer : IConsoleDrawer
     {
         public void Draw(IShape shape)
         {

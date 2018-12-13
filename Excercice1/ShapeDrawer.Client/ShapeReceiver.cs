@@ -1,28 +1,24 @@
-﻿using ShapeDrawer.Common.Message;
+﻿using ShapeDrawer.Client.Logger;
+using ShapeDrawer.Common.Message;
 using System;
 using System.Collections.Generic;
 
 namespace ShapeDrawer.Client
 {
-    public class ShapeReciever : IObservable<Message>
+    public class ShapeReciever : IShapeReciever
     {
-        private static ShapeReciever instance;
-
         private readonly List<IObserver<Message>> observerList;
         private readonly Client client;
+        private readonly ILogger logger;
 
         public bool IsStarted { get; private set; }
 
-        private ShapeReciever()
+        public ShapeReciever(ILogger logger)
         {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             observerList = new List<IObserver<Message>>();
             client = new Client();
             IsStarted = false;
-        }
-
-        public static ShapeReciever Instance
-        {
-            get { return instance ?? (instance = new ShapeReciever()); }
         }
 
         public void Start(string hostname, int port)
@@ -57,7 +53,7 @@ namespace ShapeDrawer.Client
                 }
                 catch (Exception ex)
                 {
-                    Logger.Logger.Instance.Error("Cannot notify Observer", ex);
+                    logger.Error("Cannot notify Observer", ex);
                 }
             }
         }
