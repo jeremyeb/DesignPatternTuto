@@ -93,6 +93,10 @@ namespace ShapeDrawer.Server
                             }
                             while (readNb != -1);
                         }
+                        catch(Exception ex)
+                        {
+                            logger.Error("", ex);
+                        }
                         finally
                         {
                             logger.Info("Client Deconnected.");
