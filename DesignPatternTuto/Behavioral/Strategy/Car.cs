@@ -1,6 +1,6 @@
 ﻿namespace DesignPatternTuto.Behavioral.Strategy
 {
-    public partial class Car
+    public class Car
     {
         protected readonly IMotor motor;
 
