@@ -1,5 +1,4 @@
-﻿using System;
-using Unity;
+﻿using Unity;
 using Unity.Lifetime;
 
 namespace DependencyInjection
@@ -21,9 +20,23 @@ namespace DependencyInjection
         {
             var unityContainer = new UnityContainer();
 
-            unityContainer.RegisterType<WihtDI.IEmailProvider, WihtDI.OutlookEmailProvider>();
+            CreateSingleton<WihtDI.IEmailProvider, WihtDI.OutlookEmailProvider>(unityContainer);
 
             var myApp = unityContainer.Resolve<WihtDI.UserInterface1>();
+
+            ///
+        }
+
+
+
+        //Create a Singleton
+        public static LifetimeManager CreateSingleton<TFrom, TTo>(IUnityContainer container)
+            where TTo : TFrom
+        {
+            https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff647854(v=pandp.10)
+            var singletonLifeTimeManager = new ContainerControlledLifetimeManager();
+            container.RegisterType<TFrom, TTo>(singletonLifeTimeManager);
+            return singletonLifeTimeManager;
         }
     }
 }
