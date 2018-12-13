@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Strategy\StrategyContextTests.cs" />
     <Compile Include="AppTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,6 +99,10 @@
     <ProjectReference Include="..\ShapeDrawer.Client\ShapeDrawer.Client.csproj">
       <Project>{4a412d11-0013-446f-928c-4496db5b6b86}</Project>
       <Name>ShapeDrawer.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeDrawer.Common\ShapeDrawer.Common.csproj">
+      <Project>{89d3cd79-b19e-4fde-b817-ec94128a3f76}</Project>
+      <Name>ShapeDrawer.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

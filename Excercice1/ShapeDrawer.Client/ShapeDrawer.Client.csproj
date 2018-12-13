@@ -109,6 +109,7 @@
     <Compile Include="Strategy\StrategyContext.cs" />
     <Compile Include="Utils\GraphicShapeDrawer.cs" />
     <Compile Include="Utils\ConsoleShapeDrawer.cs" />
+    <Compile Include="Utils\UnityExtentions.cs" />
     <EmbeddedResource Include="Forms\ShapeDrawer.resx">
       <DependentUpon>ShapeDrawer.cs</DependentUpon>
     </EmbeddedResource>
